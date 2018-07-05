@@ -1155,6 +1155,13 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
 
 
 #pragma mark - Getters
++ (UIImageView*)getImageView {
+    return [self sharedView].imageView;
+}
+
++ (UIView*)getHudView {
+    return [self sharedView].hudView;
+}
 
 + (NSTimeInterval)displayDurationForString:(NSString*)string {
     CGFloat minimum = MAX((CGFloat)string.length * 0.06 + 0.5, [self sharedView].minimumDismissTimeInterval);
