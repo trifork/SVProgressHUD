@@ -437,7 +437,7 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
 - (void)updateHUDFrame {
     // Check if an image or progress ring is displayed
     BOOL imageUsed = (self.imageView.image) && !(self.imageView.hidden);
-    BOOL progressUsed = self.imageView.hidden;
+    BOOL progressUsed = YES;//self.imageView.hidden;
     
     // Calculate size of string
     CGRect labelRect = CGRectZero;
