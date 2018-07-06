@@ -759,8 +759,8 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
             [strongSelf updateViewHierarchy];
             
             // Reset imageView and fadeout timer if an image is currently displayed
-            strongSelf.imageView.hidden = YES;
-            strongSelf.imageView.image = nil;
+//            strongSelf.imageView.hidden = YES;
+//            strongSelf.imageView.image = nil;
             
             // Update text and set progress to the given value
             strongSelf.statusLabel.hidden = status.length == 0;
@@ -836,8 +836,8 @@ static const CGFloat SVProgressHUDLabelSpacing = 8.0f;
             
             // Reset progress and cancel any running animation
             strongSelf.progress = SVProgressHUDUndefinedProgress;
-            [strongSelf cancelRingLayerAnimation];
-            [strongSelf cancelIndefiniteAnimatedViewAnimation];
+//            [strongSelf cancelRingLayerAnimation];
+//            [strongSelf cancelIndefiniteAnimatedViewAnimation];
             
             // Update imageView
             if (self.shouldTintImages) {
